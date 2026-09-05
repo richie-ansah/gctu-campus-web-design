@@ -1,0 +1,185 @@
+```css
+/* styles.css for the GCTU campus page */
+
+:root{
+  --brand-1: #0b5ea8;
+  --brand-2: #3aa0d6;
+  --accent: #fff59d;
+  --text: #1b2230;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Segoe UI", Arial, sans-serif;
+  margin:0;
+  line-height:1.5;
+  background:#f7fbff;
+  color:var(--text);
+}
+
+/* Header / brand */
+.site-header{
+  background:linear-gradient(90deg,var(--brand-1),var(--brand-2));
+  color:white;
+  padding:18px 20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+#logo{
+  width:80px;
+  height:80px;
+  object-fit:contain;
+  border-radius:8px;
+  background:white;
+  padding:6px;
+}
+
+.brand-text h1{
+  margin:0;
+  font-size:1.25rem;
+}
+
+.top-nav{
+  margin-top:6px;
+}
+
+.top-nav a{
+  color:white;
+  margin-right:12px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.top-nav a:hover{
+  text-decoration:underline;
+}
+
+/* Main container */
+.container{
+  max-width:900px;
+  margin:22px auto;
+  padding:18px;
+  background:white;
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(20,30,40,0.07);
+}
+
+/* Highlights and images */
+.highlight{
+  background:var(--accent);
+  padding:0 4px;
+  border-radius:2px;
+}
+
+mark{
+  background:var(--accent);
+  padding:2px 4px;
+  border-radius:2px;
+}
+
+.billboard{
+  width:100%;
+  max-height:320px;
+  object-fit:cover;
+  border-radius:6px;
+  margin:12px 0;
+}
+
+/* Form inputs */
+.input-field{
+  width:100%;
+  padding:8px;
+  border:1px solid #ddd;
+  border-radius:4px;
+}
+
+/* Buttons */
+.btn-primary{
+  background:var(--brand-1);
+  color:white;
+  padding:8px 12px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.btn-primary:hover{
+  background:#094c86;
+}
+
+/* Horizontal line */
+hr{
+  border:0;
+  border-top:1px solid #ddd;
+  margin:30px 0;
+}
+
+/* Blockquote */
+blockquote{
+  border-left:4px solid var(--brand-1);
+  padding-left:15px;
+  color:#555;
+  font-style:italic;
+}
+
+/* Footer */
+.site-footer{
+  margin-top:22px;
+  font-size:0.95rem;
+  color:#5c6b77;
+  text-align:center;
+  padding:14px 0;
+}
+
+/* Table */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:8px;
+}
+
+th,
+td{
+  border:1px solid #ddd;
+  padding:8px;
+  text-align:left;
+}
+
+th{
+  background:#f3f7fa;
+}
+
+/* Responsive */
+@media (max-width:640px){
+
+  .brand{
+    flex-direction:row;
+    gap:10px;
+    align-items:flex-start;
+  }
+
+  .brand-text{
+    display:block;
+  }
+
+  .brand-text h1{
+    font-size:1rem;
+  }
+
+  .container{
+    margin:12px;
+    padding:14px;
+  }
+
+}
+```
